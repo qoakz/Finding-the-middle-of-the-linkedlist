@@ -1,0 +1,10 @@
+Implementation of finding of middle data in a linkedlist
+
+public void middleNode{
+    Node slow=head,fast=head;
+    while(fast!=null && fast.next!=null){
+        slow=slow.next;
+        fast=fast.next.next;
+    }
+    System.out.println("Moddle data of a given linked list is"+slow.data);
+}
